@@ -7,7 +7,7 @@ int isSafe(int row,int col){
     for(int i=0;i<col;i++){
         if(board[row][i]==1) return 0;
     }
-    for(int i=row,j=col;i>=0 && j>=0;i--,j--){
+    for(int i=row,j=col;i>=0 && j>=0;i++,j--){
         if(board[i][j]==1) return 0;
     }
     for(int i=row,j=col;i<N && j>=0;i--,j--){
